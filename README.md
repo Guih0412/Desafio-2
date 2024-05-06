@@ -4,5 +4,7 @@ Nesse desafio, eu usei o desafio 1 da Faculdade UES como base com o intuito de i
 
 Requisitos para o desafio 2:
 -->Implemente o Flask no desenvolvimento do desafio 1;
--->Utilize o CSS normalize;
+
+-->Utilize o CSS normalize; 
+
 -->Utilize o arquivo base.html
