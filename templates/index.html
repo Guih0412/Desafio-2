@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<style>body {background-image: url(/static/images/fundo.png);}</style>
+<!--Img-->
+<div>
+    <img src="{{url_for('static', filename='/images/capa.png')}}" alt="Capa"/>
+</div>
+<!--Texto-->
+<div class="backgound1">
+    <h2>Sobre a Faculdade</h2>
+    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, veritatis aliquid. Non, cupiditate similique. Doloribus facere nulla nam earum sint error exercitationem minima perferendis nesciunt, minus, repellendus corporis esse. Iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nesciunt, consequatur quisquam error id est libero vel officiis, aliquid vero at, reprehenderit delectus nihil. Aliquam nisi tempora hic sint eos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corrupti harum ullam rerum? Officia officiis voluptatibus voluptatem facilis placeat maiores molestiae itaque iure. Ullam, culpa molestias. Nobis quo sunt aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae quis eligendi dolores suscipit pariatur? Ipsam, alias aspernatur ipsa facere dicta laborum corporis, ab dolor a animi veniam optio laudantium!</p>
+</div>
+{% endblock %}

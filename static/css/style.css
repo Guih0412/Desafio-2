@@ -1,0 +1,26 @@
+.logo{
+    float: left;
+    height: 104px;
+    display: flex;
+    align-items: center;
+}
+.linksC{
+    float: right;
+    height: 104px;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo{
+    padding-bottom: 40px;
+}
+
+.rodape{
+    text-align: center;
+}
+
+body{
+    max-width: 900px;
+    margin: 0 auto;
+    background-image: url('/static/images/fundo2.png');
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favImg.png">
+
+    <!--Normalize-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/normalize.css') }}">
+    <!--Style-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+
+<body>
+    <!--Cabeçalho-->
+    <div>
+        <span class="logo">
+            <img src="{{url_for('static', filename='/images/logo.png')}}" alt="Logo" />
+        </span>
+        <span class="linksC">
+            <a href="./">Home</a>
+            <p style="padding: 0px 4px;">|</p>
+            <a href="./quemsomos">Quem somos</a>
+            <p style="padding: 0px 4px;">|</p>
+            <a href="./contatos">Contatos</a>
+        </span>
+        <div style="clear: both;"></div>
+    </div>
+    <!--Conteudo-->
+    <div class="conteudo">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <!--Rodapé-->
+    <div class="rodape">
+        <h4>Todos os direitos reservados</h4>
+    </div>
+</body>
+</html>
